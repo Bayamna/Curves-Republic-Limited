@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
             {!open ? <GiHamburgerMenu className='text-2xl lg:hidden cursor-pointer' onClick={()=>setOpen(true)}/>:<IoMdClose className='text-3xl lg:hidden cursor-pointer' onClick={()=>setOpen(false)}/>}
         </nav>
-        {open ?  <div className='flex-row gap-6 bg-brown h-screen w-screen fixed p-14 text-lg top-0 text-white text-center mt-[4rem]'>
+        {open ?  <div className='flex-row gap-6 bg-brown h-screen w-screen fixed p-14 text-lg top-0 text-white text-center mt-[4rem] z-998 lg:hidden'>
             <Link to="/"><p className='hover:text-gold' onClick={()=>setOpen(false)}>Home</p></Link>
             <Link to="/about"><p className='hover:text-gold' onClick={()=>setOpen(false)}>About</p></Link>
             <Link to="/services"><p className='hover:text-gold' onClick={()=>setOpen(false)}>Services</p></Link>
