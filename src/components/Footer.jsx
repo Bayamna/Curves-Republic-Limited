@@ -6,7 +6,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className='w-full p-10 bg-gray-400/10 border-t-2 border-gray-400 '>
+    <div className='w-full p-10 bg-gray-400/10 border-t-2 border-gray-400 absolute buttom-0'>
       <footer className='text-gray-600 lg:flex lg:justify-center lg:items-center gap-10'>
         <p className='font-medium flex justify-center items-center'>Copyright © {new Date().getFullYear()}, Curves Republic Ltd.</p>
 
