@@ -9,7 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
