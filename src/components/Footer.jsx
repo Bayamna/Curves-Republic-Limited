@@ -7,10 +7,10 @@ import { AiFillInstagram } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className='w-full p-4 lg:p-10 bg-gold'>
-      <footer className='text-lightBrown lg:flex lg:justify-center lg:items-center gap-10'>
+      <footer className='text-lightBrown lg:flex lg:justify-center lg:items-center gap-7'>
         <p className='font-medium flex justify-center items-center'>Copyright © {new Date().getFullYear()}, Curves Republic Ltd.</p>
 
-        <div className='flex justify-center items-center gap-2 mt-2 lg:mt-0'>
+        <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0'>
             <a href='/'><FaFacebook className='text-2xl cursor-pointer hover:text-brown'/></a>
             <a href=''><SiYoutubemusic className='text-2xl cursor-pointer hover:text-brown'/></a>
             <a href=''><TbBrandTiktokFilled className='text-2xl cursor-pointer hover:text-brown'/></a>
