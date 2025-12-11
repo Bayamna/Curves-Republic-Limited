@@ -7,7 +7,7 @@ const Accordion = ({question, answer, onClick, openIcon, closeIcon, stateValue})
     <div>
        <div className=' bg-gray-400/15 p-4 lg:p-6 border border-gray-400 rounded-lg mt-3'>
             <div className='flex justify-between items-center'>
-                <h1 className='text-lightBrown font-bold text-2xl'>{question}</h1>
+                <h1 className='text-gray-600 font-bold text-2xl'>{question}</h1>
                 <div className='text-gray-600 text-3xl cursor-pointer'>{openIcon}{onClick}</div>
                 <div>{closeIcon}{onClick}{stateValue}</div>
             </div>

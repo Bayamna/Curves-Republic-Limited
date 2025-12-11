@@ -13,7 +13,7 @@ const Home = () => {
       <div className='flex-grow'>
         {/* Heroe section */}
         <section className='min-h-100% place-items-center min-w-100% bg-gradient-to-r from-lightGold to-gold grid lg:grid-cols-2 py-35 gap-12 lg:gap-0 px-5 lg:px-10 '>
-          <div>
+          <div className='text-center lg:text-left'>
             <h1 className='text-brown font-black text-4xl lg:text-5xl'>Where Beauty Meets Confidence!</h1>
             <p className='text-brown text-xl lg:text-2xl mt-4 font-medium'>
               Strugling with stubborn Fat, Skin Stag, DPN's, Keloid, Dark Spots, Scars or Stretch Marks etc.?

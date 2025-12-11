@@ -7,6 +7,7 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 import { IoIosArrowDropupCircle } from "react-icons/io";
 import axios from "axios";
 import Accordion from '../components/accordion';
+import FAQ from '../faq';
 
 const API_URL = "http://localhost:3000/api/booking";
 
@@ -58,7 +59,7 @@ const Booking = () => {
   return (
     <div className='mt-[8rem] text-center w-[90%] lg:w-[70%] mx-auto flex flex-col min-h-screen '>
     <div className='flex-grow'>
-        <h1 className='text-[2rem] font-black text-lightBrown tracking-tight'>Booking</h1>
+        <h1 className='text-[2.5rem] font-black text-lightBrown tracking-tight'>Let's Book You Today</h1>
         <div className='lg:flex justify-between items-start gap-6 mt-6 mb-10 py-[1.5rem] border-2 border-gray-400 rounded-xl bg-white'>
             <div className='text-lightBrown p-6 lg:border-r border-gray-300'>
 
@@ -118,44 +119,21 @@ const Booking = () => {
             </section>
         </div>
 
-        <section className='mb-10'>
-            <h1 className='text-[2rem] font-black text-lightBrown tracking-tight leading-9 mb-2'>Frequently Asked Questions</h1>
+        <section className='mb-20 mt-10 lg:mt-20'>
+            <h1 className='text-[2rem] font-black text-lightBrown tracking-tight leading-9 mb-2'>Frequently Asked Questions (FAQ's)</h1>
             <p className='text-gray-600 text-lg lg:text-xl font-bold leading-tight'>We know you have questions to ask, these are the answers </p>
 
             <div className='mt-6'>
 
-                <div className=' bg-gray-400/15 p-4 lg:p-6 border border-gray-400 rounded-lg mt-3'>
-                    <div className='flex justify-between items-center'>
-                        <h1 className='text-lightBrown font-bold text-2xl'>Question One</h1>
-                        {!openQuestionOne ?  <IoIosArrowDropdownCircle onClick={()=>{setOpenQuestionOne(true); setOpenQuestionTwo(false); setOpenQuestionThree(false)}} className='text-gray-600 text-3xl cursor-pointer'/> :
-                         <IoIosArrowDropupCircle onClick={()=>{setOpenQuestionOne(false)}} className='text-gray-600 text-3xl cursor-pointer'/>}
-                    </div>
-                    {openQuestionOne ? <p className='text-gray-600 text-lg lg:text-xl text-left mt-2'>This is the answer for question one</p> : null}
-                </div>
-
-                <div className=' bg-gray-400/15 p-4 lg:p-6 border border-gray-400 rounded-lg mt-3'>
-                    <div className='flex justify-between items-center'>
-                        <h1 className='text-lightBrown font-bold text-2xl'>Question Two</h1>
-                        {!openQuestionTwo ?  <IoIosArrowDropdownCircle onClick={()=>{setOpenQuestionTwo(true); setOpenQuestionOne(false); setOpenQuestionThree(false)}} className='text-gray-600 text-3xl cursor-pointer'/> : 
-                        <IoIosArrowDropupCircle onClick={()=>{setOpenQuestionTwo(false)}} className='text-gray-600 text-3xl cursor-pointer'/>}
-                    </div>
-                    {openQuestionTwo ? <p className='text-gray-600 text-lg lg:text-xl text-left mt-2'>This is the answer for question Two</p> : null}
-                </div>
-
-                <div className=' bg-gray-400/15 p-4 lg:p-6 border border-gray-400 rounded-lg mt-3'>
-                    <div className='flex justify-between items-center'>
-                        <h1 className='text-lightBrown font-bold text-2xl'>Question Three</h1>
-                        {!openQuestionThree ?  <IoIosArrowDropdownCircle onClick={()=>{setOpenQuestionThree(true); setOpenQuestionOne(false); setOpenQuestionTwo(false)}} className='text-gray-600 text-3xl cursor-pointer'/> : 
-                        <IoIosArrowDropupCircle onClick={()=>{setOpenQuestionThree(false)}} className='text-gray-600 text-3xl cursor-pointer'/>}
-                    </div>
-                    {openQuestionThree ? <p className='text-gray-600 text-lg lg:text-xl text-left mt-2'>This is the answer for question Three</p> : null}
-                </div>
-
-                {/* <Accordion
-                    question="Question Four"
-                    stateValue={openQuestionFour ? answer="This is the answer for question four" : null} 
-                    openIcon={<IoIosArrowDropupCircle onClick={()=>{setOpenQuestionFour(true)}}/>}
-                /> */}
+                {FAQ.map(items=>{
+                    return (
+                        <Accordion
+                            key={items.id}
+                            question={items.question}
+                            answer={items.answer}
+                        />
+                    )
+                })}
 
             </div>
 
