@@ -41,11 +41,11 @@ const Home = () => {
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, ease: "easeOut"}}
             viewport={{ once: false, amount: 0.2 }}>
-              
 
             <img src={HeroeImg} className=' w-full h-[30rem] transform-none sm:text-center lg:text-center'/>
           </motion.div>
         </section>
+
 
         {/* Explore our services */}
         <section className='min-w-100% p-6 lg:p-15'>
@@ -65,6 +65,7 @@ const Home = () => {
             })}
           </div>
         </section>
+
         
         {/* Why curves republic ltd. */}
         <section className='mt-6  lg:mt-4 bg-gradient-to-r from-brown to-lightBrown p-6'>

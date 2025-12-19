@@ -18,15 +18,15 @@ const Footer = () => {
             <button className='text-white bg-lightBrown w-[50%] py-2 rounded-sm cursor-pointer'>Submit</button>
           </form>
 
-          <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0'>
-            <a href='/'><FaFacebook className='text-3xl cursor-pointer hover:text-brown'/></a>
-            <a href=''><SiYoutubemusic className='text-3xl cursor-pointer hover:text-brown'/></a>
-            <a href=''><TbBrandTiktokFilled className='text-3xl cursor-pointer hover:text-brown'/></a>
-            <a href=''><AiFillInstagram className='text-3xl cursor-pointer hover:text-brown'/></a>
+          <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0 mb-2'>
+            <a href='/'><FaFacebook className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
+            <a href=''><SiYoutubemusic className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
+            <a href=''><TbBrandTiktokFilled className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
+            <a href=''><AiFillInstagram className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
           </div>
 
         </div>
-        <p className='font-medium text-center'>Copyright © {new Date().getFullYear()}, Curves Republic Ltd.</p>
+        <p className='font-medium text-center text-sm lg:text-md'>Copyright © {new Date().getFullYear()}, Curves Republic Ltd.</p>
       </footer>
     </div>
   )
