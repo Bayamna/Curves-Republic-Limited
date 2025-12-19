@@ -55,7 +55,7 @@ const Booking = () => {
   return (
     <div className='mt-[8rem] text-center w-[90%] lg:w-[70%] mx-auto flex flex-col min-h-screen '>
     <div className='flex-grow'>
-        <h1 className='text-[2.5rem] font-black text-lightBrown tracking-tight'>Let's Book You Today</h1>
+        <h1 className='text-[2.5rem] font-black text-lightBrown tracking-tight leading-tight'>Let's Book You Today</h1>
         <div className='lg:flex justify-between items-start gap-6 mt-6 mb-10 py-[1.5rem] border-2 border-gray-400 rounded-xl bg-white'>
             <div className='text-lightBrown p-6 lg:border-r border-gray-300'>
 

@@ -48,7 +48,7 @@ const Home = () => {
         </section>
 
         {/* Explore our services */}
-        <section className='min-w-100% p-10 lg:p-15'>
+        <section className='min-w-100% p-6 lg:p-15'>
           <h1 className=' text-3xl lg:text-4xl lg:mb-6 text-center text-lightBrown font-black'>
             What Would You Like To Fix Today?
           </h1>
