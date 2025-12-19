@@ -1,12 +1,19 @@
-import React from 'react'
+import React from 'react';
+import {motion} from "framer-motion";
 
 const WhatWeDoCard = ({title, description}) => {
   return (
-    <div className='bg-gray-400/10 p-5 lg:p-10 rounded-xl mb-4 drop-shadow-lg drop-shadow-gray-200 border border-gray-400 cursor-pointer'>
+    <motion.div 
+      initial={{opacity: 0, y: 30}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{duration: 1, ease: "easeOut"}}
+      viewport={{ once: false, amount: 0.5 }}
+
+      className='bg-gray-400/10 p-5 lg:p-10 rounded-xl mb-4 drop-shadow-lg drop-shadow-gray-200 border border-gray-400 cursor-pointer'>
       <h1 className='text-lightBrown font-bold text-2xl lg:text-3xl'>{title}</h1>
       <p className='text-gray-600 text-sm font-normal lg:text-lg mt-2 leading-normal'>{description}</p>
-    </div>
+    </motion.div>
   )
 }
 
-export default WhatWeDoCard
+export default WhatWeDoCard;

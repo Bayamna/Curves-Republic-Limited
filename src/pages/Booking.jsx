@@ -23,10 +23,6 @@ const Booking = () => {
     })
 
     const [bookingSuccessMsg, setBookingSuccessMsg] = useState("");
-    const [openQuestionOne, setOpenQuestionOne] = useState(false);
-    const [openQuestionTwo, setOpenQuestionTwo] = useState(false);
-    const [openQuestionThree, setOpenQuestionThree] = useState(false);
-    const [openQuestionFour, setOpenQuestionFour] = useState(false);
 
     //Handle input from the user.
     const handleChange = (e)=>{
@@ -119,7 +115,7 @@ const Booking = () => {
             </section>
         </div>
 
-        <section className='mb-20 mt-10 lg:mt-20'>
+        <section className='mb-20 mt-10 lg:mt-15'>
             <h1 className='text-[2rem] font-black text-lightBrown tracking-tight leading-9 mb-2'>Frequently Asked Questions (FAQ's)</h1>
             <p className='text-gray-600 text-lg lg:text-xl font-bold leading-tight'>We know you have questions to ask, these are the answers </p>
 
@@ -136,7 +132,6 @@ const Booking = () => {
                 })}
 
             </div>
-
         </section>
 
         </div>
