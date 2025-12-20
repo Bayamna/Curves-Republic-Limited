@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaFacebook } from "react-icons/fa";
-import { SiYoutubemusic } from "react-icons/si";
-import { TbBrandTiktokFilled } from "react-icons/tb";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { FaYoutubeSquare } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";;
 import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
@@ -9,24 +9,25 @@ const Footer = () => {
     <div className='w-full p-4 lg:p-10 bg-gold'>
       <footer className='text-lightBrown flex-col lg:justify-center lg:items-center gap-7'>
    
-        <div className='flex-col justify-center items-center gap-1 mt-2 lg:mt-0'>
+        <div className='flex-col justify-center items-center gap-1 mt-5 lg:mt-0'>
 
-          <form className='text-center flex-col justify-center items-center gap-4  mb-4 lg:w-[40%] w-[90%] mx-auto'>
-            <h1 className='text-4xl lg:text-5xl font-black tracking-tight mb-4'>Get Newsletter</h1>
+          <form className='text-center flex-col justify-center items-center gap-4  mb-4 lg:w-[50%] w-[90%] mx-auto'>
+            <h1 className='text-4xl lg:text-5xl font-black tracking-tight '>Get Newsletter</h1>
+            <p className='mb-2 font-medium tracking-tight leading-tight'>Be the first to receive price, promos and new products updates.</p>
             <input type='text' id="newsLetter" placeholder='Enter Your Email' autoComplete='off'
             className='bg-lightGold p-3 w-full border-0 outline-0 mb-2 rounded-sm'/>
             <button className='text-white bg-lightBrown w-[50%] py-2 rounded-sm cursor-pointer'>Submit</button>
           </form>
 
-          <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0 mb-2'>
-            <a href='/'><FaFacebook className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
-            <a href=''><SiYoutubemusic className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
-            <a href=''><TbBrandTiktokFilled className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
+          <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0 mb-1'>
+            <a href='/'><FaSquareFacebook className='text-xl lg:text-2xl cursor-pointer hover:text-brown'/></a>
+            <a href=''><FaYoutubeSquare className='text-xl lg:text-2xl cursor-pointer hover:text-brown'/></a>
+            <a href=''><AiFillTikTok className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
             <a href=''><AiFillInstagram className='text-2xl lg:text-3xl cursor-pointer hover:text-brown'/></a>
           </div>
 
         </div>
-        <p className='font-medium text-center text-sm lg:text-md'>Copyright © {new Date().getFullYear()}, Curves Republic Ltd.</p>
+        <p className='font-medium text-center text-sm lg:text-md mb-5 lg:mb-0'>Copyright © {new Date().getFullYear()}, Curves Republic Ltd.</p>
       </footer>
     </div>
   )
