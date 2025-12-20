@@ -23,15 +23,13 @@ const Home = () => {
           
             className='text-center lg:text-left'>
             <h1 className='text-brown font-black text-4xl lg:text-5xl'>Where Beauty Meets Confidence!</h1>
-            <p className='text-brown text-xl lg:text-2xl mt-4 font-medium'>
+            <p className='text-brown text-xl lg:text-2xl mt-4 font-medium mb-8'>
               Strugling with stubborn Fat, Skin Stag, DPN's, Keloid, Dark Spots, Scars or Stretch Marks etc.?
             </p>
 
 
             {/* Action button */}
-            <motion.button className='text-lg text-white bg-gradient-to-r border-3 border-lightBrown from-brown  to-lightBrown px-[20px] py-[8px] cursor-pointer rounded-lg mt-6'>
-              <Link to="/booking"><p>Let's Book You Today</p></Link>
-            </motion.button>
+              <Link to="/booking" className='text-lg text-white bg-gradient-to-r from-brown  to-lightBrown border-3 border-lightBrown px-[20px] py-[8px] cursor-pointer rounded-lg'>Let's Book You Today</Link>
           </motion.div>
 
 

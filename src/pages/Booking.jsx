@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import {motion} from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMailOpen } from "react-icons/io";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { IoIosArrowDropdownCircle } from "react-icons/io";
-import { IoIosArrowDropupCircle } from "react-icons/io";
 import axios from "axios";
 import Accordion from '../components/accordion';
 import FAQ from '../faq';
@@ -82,8 +81,13 @@ const Booking = () => {
 
             </div>
 
-            <section className='mx-10'>
-                <form onSubmit={handleSubmit}>
+            <section 
+                className='mx-10'>
+                <motion.form onSubmit={handleSubmit}
+                    nitial={{opacity: 0, y: 30}}
+                    whileInView={{opacity: 1, y: 0}}
+                    transition={{duration: 1, ease: "easeOut"}}
+                    viewport={{ once: false, amount: 0.2 }}>
                     <input onChange={handleChange} value={input.fName} type='text' name='fName' placeholder='- First Name -' autoComplete='off' className='w-[100%] p-3 m-1 outline-0 border-2 border-gray-400/20 rounded-lg placeholder:text-gray-600 focus:ring-2 focus:ring-gray-300 text-gray-600 bg-gray-400/10' required/>
                     <input onChange={handleChange} value={input.lName} type='text' name='lName' placeholder='- Last Name -' autoComplete='off' className='w-[100%] p-3 m-1 outline-0 border-2 border-gray-200 rounded-lg  placeholder:text-gray-600 focus:ring-2 focus:ring-gray-300 text-gray-600 bg-gray-400/10' required/>
                     <input onChange={handleChange} value={input.age} type='text' name='age' placeholder='- Age -' autoComplete='off' className='w-[100%] p-3 m-1 outline-0 border-2  border-gray-200 rounded-lg  placeholder:text-gray-600 focus:ring-2 focus:ring-gray-300 text-gray-600 bg-gray-400/10' required/>
@@ -111,7 +115,7 @@ const Booking = () => {
                         <option value="Hair Loss Treatment">Hair Loss Treatment</option>
                     </select>
                     <button type='submit' className='bg-gradient-to-r from-brown to-lightBrown text-white px-8 py-2 cursor-pointer border-3 border-lightBrown rounded-lg mt-5 font-bold'>Book Now</button>
-                </form>
+                </motion.form>
             </section>
         </div>
 
