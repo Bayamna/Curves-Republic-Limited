@@ -19,25 +19,29 @@ const WhatWeDo = [
     {
         id: 3, 
         title: "Regenerative And Injectable Treatment",
-        description: "Turn back time with modern aesthetics. From PRP therapy and skin boosters to dermal fillers, tear-trough correction, and HA butt/hip enhancement, our regenerative treatments restore youth, lift, and glow from within."
+        description: "Turn back time with modern aesthetics. From PRP therapy and skin boosters to dermal fillers, tear-trough correction, and HA butt/hip enhancement, our regenerative treatments restore youth, lift, and glow from within.",
+        image: FatLoseImg
     },
 
     {
         id: 4, 
         title: "Advance Facials",
-        description: "Glowing skin starts here. Experience professional facial treatments such as Hydrafacial, Acne Facial, Glow Facial, Microneedling, and Anti-Aging Facials each designed to rejuvenate, brighten, and refresh your skin for a radiant, youthful glow."
+        description: "Glowing skin starts here. Experience professional facial treatments such as Hydrafacial, Acne Facial, Glow Facial, Microneedling, and Anti-Aging Facials each designed to rejuvenate, brighten, and refresh your skin for a radiant, youthful glow.",
+        image: FatLoseImg
     },
 
     {
         id: 5, 
         title: "Dental Care",
-        description: "Smile with confidence. Through our professional dental services teeth whitening, scaling, and oral aesthetics we help you achieve a healthy, bright smile that complements your overall beauty."
+        description: "Smile with confidence. Through our professional dental services teeth whitening, scaling, and oral aesthetics we help you achieve a healthy, bright smile that complements your overall beauty.",
+        image: FatLoseImg
     },
 
     {
         id: 6, 
         title: "IV Therapies",
-        description: "Replenish. Revive. Recharge. Our IV drips deliver skin-brightening, detox, weight-loss, immune boost, and hydration nutrients directly into your system for enhanced vitality, glow, and wellness  from the inside out."
+        description: "Replenish. Revive. Recharge. Our IV drips deliver skin-brightening, detox, weight-loss, immune boost, and hydration nutrients directly into your system for enhanced vitality, glow, and wellness  from the inside out.",
+        image: FatLoseImg
     },
 
     {
