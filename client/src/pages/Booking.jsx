@@ -18,7 +18,7 @@ const Booking = () => {
         location: "",
         number: "",
         treatment: "",
-        date: new Date().toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+        date: new Date()
     })
 
     const [bookingSuccessMsg, setBookingSuccessMsg] = useState("");
@@ -32,14 +32,14 @@ const Booking = () => {
     }
 
     //Submit input to database.
-    const handleSubmit = (e)=>{
+    const handleSubmit = async(e)=>{
         e.preventDefault();
         try{
-            const response = axios.post(API_URL, input);
-            setBookingSuccessMsg(response);
-            console.log(response.data);
+            const response =  await axios.post(API_URL, input);
+            setBookingSuccessMsg(response.data);
+            console.log(bookingSuccessMsg);
         }catch (error){
-            console.log(error)
+            console.log(error);
         }
 
         setInput({  
@@ -125,7 +125,6 @@ const Booking = () => {
             <p className='text-gray-600 text-lg lg:text-xl font-bold leading-tight'>We know you have questions to ask, these are the answers </p>
 
             <div className='mt-6'>
-
                 {FAQ.map(items=>{
                     return (
                         <Accordion
@@ -135,10 +134,8 @@ const Booking = () => {
                         />
                     )
                 })}
-
             </div>
         </section>
-
         </div>
     </div>
   )

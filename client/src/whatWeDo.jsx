@@ -50,6 +50,13 @@ const WhatWeDo = [
         description: "Your skin deserves the best. Discover our exclusive range of Curves Republic skincare formulations, including brightening serums, acne solutions, sunscreens, and body lotions all scientifically crafted to protect, nourish, and perfect your skin every day.",
         image: GlowSkin
     },
+
+    {
+        id: 7, 
+        title: "Skin Care Products",
+        description: "Your skin deserves the best. Discover our exclusive range of Curves Republic skincare formulations, including brightening serums, acne solutions, sunscreens, and body lotions all scientifically crafted to protect, nourish, and perfect your skin every day.",
+        image: GlowSkin
+    },
 ]
 
 export default WhatWeDo;
