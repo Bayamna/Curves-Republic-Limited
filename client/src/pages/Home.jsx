@@ -57,6 +57,7 @@ const Home = () => {
                     key={item.id}
                     image={item.image}
                     description={item.description}
+                    message={item.message}
                 />
               )
             })}
