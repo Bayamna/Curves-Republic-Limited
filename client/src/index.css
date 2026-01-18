@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap");
 @import "tailwindcss";
 
-@theme{
+@theme {
   --color-brown: #4e0f00;
   --color-lightBrown: #a11f00;
   --color-gold: #efbd02;
   --color-lightGold: #d1b100;
   --color-white: #ffffff;
+  --font-gothicExpanded: "Special Gothic Expanded One", sans-serif;
 }

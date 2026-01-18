@@ -10,15 +10,15 @@ const Navbar = () => {
 
   return (
     <div>
-        <nav className='bg-gradient-to-r z-999 from-brown to-lightBrown text-white flex py-4 lg:py-7 lg:px-10 px-8 justify-between items-center text-lg fixed top-0 w-screen'>
+        <nav className='bg-gradient-to-r z-999 from-brown to-lightBrown text-white flex py-3 lg:py-5 lg:px-10 px-8 justify-between items-center text-lg fixed top-0 w-screen'>
             <div className='flex justify-center items-center gap-2'>
-                <img src={Logo} alt='logo' className=' w-[45px] h-[45px] transform-none'/>
-                <Link to="/"><h1 className='lg:text-xl text-lg font-bold text-white hover:text-lightGold' onClick={()=>setOpen(false)}>Curves Republic Ltd.</h1></Link>
+                <img src={Logo} alt='logo' className=' w-[40px] h-[40px] lg: transform-none'/>
+                <Link to="/"><h1 className='lg:text-lg text-sm text-white hover:text-lightGold font-gothicExpanded font-light' onClick={()=>setOpen(false)}>Curves Republic Ltd.</h1></Link>
             </div>
             
-            <Link to="/booking" className='text-[16px] text-brown font-bold bg-white px-[24px] py-[9px] cursor-pointer rounded-lg hidden lg:flex'>Let's Book You Today</Link>
+            <Link to="/booking" className='text-sm text-brown bg-white px-[24px] py-[9px] cursor-pointer rounded-lg hidden lg:flex font-gothicExpanded tracking-wide'>Let's Book You Today</Link>
            
-            <div className='hidden lg:flex justify-center items-center gap-4 font-normal'>
+            <div className='hidden lg:flex justify-center items-center gap-4 font-light font-gothicExpanded lg:text-sm tracking-wide'>
                 <Link to="/"><p className='hover:text-lightGold'>Home</p></Link>
                 <Link to="/about"><p className='hover:text-lightGold'>About</p></Link>
                 <Link to="/services"><p className='hover:text-lightGold'>Services</p></Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             animate={{opacity: 1, y: 0 }}
             transition={{duration: 0.2, ease: "easeIn"}}
         
-            className='flex flex-col justify-start items-start gap-5 bg-brown h-screen w-screen fixed p-14 text-lg top-0 text-white font-normal text-left mt-[4rem] z-998 lg:hidden'>
+            className='flex flex-col justify-start items-start gap-5 bg-brown h-screen w-screen fixed p-14 text-lg top-0 text-white font-normal text-left mt-[4rem] z-998 lg:hidden font-gothicExpanded tracking-wide'>
             <Link to="/" className='hover:text-gold' onClick={()=>setOpen(false)}>Home</Link>
             <Link to="/about" className='hover:text-gold' onClick={()=>setOpen(false)}>About</Link>
             <Link to="/services"className='hover:text-gold' onClick={()=>setOpen(false)}>Services</Link>

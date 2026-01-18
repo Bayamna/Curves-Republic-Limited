@@ -21,14 +21,14 @@ const Home = () => {
             viewport={{ once: false, amount: 0.5 }}
           
             className='text-center lg:text-left'>
-            <h1 className='text-brown font-black text-4xl lg:text-5xl'>Where Beauty Meets Confidence!</h1>
+            <h1 className='text-brown font-medium text-4xl lg:text-5xl font-gothicExpanded'>Where Beauty Meets Confidence!</h1>
             <p className='text-brown text-xl lg:text-2xl mt-4 font-medium mb-8'>
               Strugling with stubborn Fat, Skin Stag, DPN's, Keloid, Dark Spots, Scars or Stretch Marks etc.?
             </p>
 
 
             {/* Action button */}
-              <Link to="/booking" className='text-lg text-white bg-gradient-to-r from-brown  to-lightBrown border-3 border-lightBrown px-[20px] py-[8px] cursor-pointer rounded-lg'>Let's Book You Today</Link>
+              <Link to="/booking" className='text-sm text-white bg-gradient-to-r from-brown  to-lightBrown border-3 border-lightBrown px-[20px] py-[8px] cursor-pointer rounded-lg font-gothicExpanded tracking-wider'>Let's Book You Today</Link>
           </motion.div>
 
 
@@ -46,7 +46,7 @@ const Home = () => {
 
         {/* Explore our services */}
         <section className='min-w-100% p-6 lg:p-15'>
-          <h1 className=' text-3xl lg:text-4xl lg:mb-6 text-center text-lightBrown font-black'>
+          <h1 className=' text-2xl lg:text-4xl lg:mb-6 text-center text-lightBrown font-gothicExpanded tracking-wide'>
             What Would You Like To Fix Today?
           </h1>
 
@@ -66,8 +66,8 @@ const Home = () => {
 
         
         {/* Why curves republic ltd. */}
-        <section className='mt-6  lg:mt-4 bg-gradient-to-r from-brown to-lightBrown p-6'>
-            <h1 className=' text-2xl lg:text-4xl lg:mb-6 text-center mt-8 lg:mt-6 text-white font-black'>Why Curves Republic Ltd.</h1>
+        <section className='mt-5 lg:mt-4 bg-gradient-to-r from-brown to-lightBrown p-6'>
+            <h1 className=' text-2xl lg:text-4xl lg:mb-6 text-center mt-5 lg:mt-6 text-white font-gothicExpanded tracking-wide'>Why Curves Republic Ltd.</h1>
             <div className='grid gap-4 lg:gap-6 lg:grid-cols-2 mb-10 mt-8 lg:mt-12'>
               {valuesData.map(data=>{
                 return (

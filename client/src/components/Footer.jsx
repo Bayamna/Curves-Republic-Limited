@@ -12,11 +12,11 @@ const Footer = () => {
         <div className='flex-col justify-center items-center gap-1 mt-5 lg:mt-0'>
 
           <form className='text-center flex-col justify-center items-center gap-4  mb-4 lg:w-[50%] w-[90%] mx-auto'>
-            <h1 className='text-4xl lg:text-5xl font-black tracking-tight '>Get Newsletter</h1>
+            <h1 className='text-3xl lg:text-4xl font-gothicExpanded tracking-wide '>Get Newsletter</h1>
             <p className='mb-2 font-medium tracking-tight leading-tight'>Be the first to receive price, promos and new products updates.</p>
             <input type='text' id="newsLetter" placeholder='Enter Your Email' autoComplete='off'
             className='bg-lightGold p-3 w-full border-0 outline-0 mb-2 rounded-sm'/>
-            <button className='text-white bg-lightBrown w-[50%] py-2 rounded-sm cursor-pointer'>Submit</button>
+            <button className='text-gold text-sm lg:text-lg bg-lightBrown w-[50%] py-2 rounded-sm cursor-pointer font-gothicExpanded tracking-wider'>Subscribe</button>
           </form>
 
           <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0 mb-1'>
