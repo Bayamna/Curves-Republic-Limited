@@ -58,8 +58,6 @@ const Booking = () => {
     <div className='mt-[8rem] text-center w-[90%] lg:w-[70%] mx-auto flex flex-col min-h-screen '>
     <div className='flex-grow'>
         <h1 className='text-2xl lg:text-4xl text-lightBrown leading-tight font-gothicExpanded tracking-wide'>Let's Book You Today</h1>
-
-        {bookingSuccessMsg && <Alert message={bookingSuccessMsg} onClick={()=>{setBookingSuccessMsg(" ")}}/>}
         
         <div className='lg:flex justify-between items-center gap-6 mt-6 mb-10  border-2 border-gray-400 rounded-xl bg- bg-gray-400/10'>
             <div className='text-gray-600 p-6 lg:border border-gray-300 bg-gray-400/10 rounded-lg'>
@@ -94,12 +92,7 @@ const Booking = () => {
 
             <section 
                 className='mx-10 my-10'>
-                <motion.form onSubmit={handleSubmit}
-                    nitial={{opacity: 0, y: 30}}
-                    whileInView={{opacity: 1, y: 0}}
-                    transition={{duration: 1, ease: "easeOut"}}
-                    viewport={{ once: false, amount: 0.2 }}>
-                        
+                <form onSubmit={handleSubmit}>
                     <input onChange={handleChange} value={input.fName} type='text' name='fName' placeholder='Enter your first name' autoComplete='off' className='w-[100%] p-3 m-1 outline-0 border-2 border-gray-400/20 rounded-lg placeholder:text-gray-400 focus:ring-2 focus:ring-gray-300 text-gray-600 bg-gray-400/10' required/>
                     <input onChange={handleChange} value={input.lName} type='text' name='lName' placeholder='Enter your last name' autoComplete='off' className='w-[100%] p-3 m-1 outline-0 border-2 border-gray-200 rounded-lg  placeholder:text-gray-400 focus:ring-2 focus:ring-gray-300 text-gray-600 bg-gray-400/10' required/>
                     <input onChange={handleChange} value={input.age} type='text' name='age' placeholder='Enter your age' autoComplete='off' className='w-[100%] p-3 m-1 outline-0 border-2  border-gray-200 rounded-lg  placeholder:text-gray-400 focus:ring-2 focus:ring-gray-300 text-gray-600 bg-gray-400/10' required/>
@@ -131,12 +124,12 @@ const Booking = () => {
                         <option value="Hair Loss Treatment">Hair Loss Treatment</option>
                     </select>
                     <button type='submit' className='bg-gradient-to-r from-brown to-lightBrown text-white px-8 py-2 cursor-pointer border-3 border-lightBrown rounded-lg mt-5 font-gothicExpanded tracking-wider'>Book Now</button>
-                </motion.form>
+                </form>
             </section>
         </div>
 
         <section className='mb-20 mt-10 lg:mt-15'>
-            <h1 className='text-2xl lg:text-4xl text-lightBrown leading-7 mb-2 font-gothicExpanded tracking-wide'>Frequently Asked Questions (FAQ's)</h1>
+            <h1 className='text-2xl lg:text-4xl text-lightBrown leading-7 lg:leading-10 mb-2 font-gothicExpanded tracking-wide'>Frequently Asked Questions (FAQ's)</h1>
             <p className='text-gray-600 text-sm lg:text-xl leading-tight font-gothicExpanded tracking-wide '>We know you have questions to ask, these are the answers </p>
 
             <div className='mt-6'>
@@ -151,6 +144,9 @@ const Booking = () => {
                 })}
             </div>
         </section>
+
+        {bookingSuccessMsg && <Alert message={bookingSuccessMsg}/>}
+
         </div>
     </div>
   )

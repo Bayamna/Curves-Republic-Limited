@@ -10,11 +10,17 @@ const WhatWeDoCard = ({title, description, image, message}) => {
       transition={{duration: 1, ease: "easeOut"}}
       viewport={{ once: true, amount: 0.5 }}
 
-      className='bg-gray-200/10 p-4 lg:p-10 rounded-xl lg:mb-1 mb-0 drop-shadow-lg drop-shadow-gray-200 border border-gray-400 cursor-pointer'>
-      <img src={image} className='mb-5 mt-3 rounded-lg'/>
-      <h1 className='text-lightBrown font-bold text-2xl lg:text-3xl leading-tight'>{title}</h1>
-      <p className='text-gray-600 text-md font-normal lg:text-lg mt-2 mb-5 leading-normal tracking-tight '>{description}</p>
-      <WhatsAppBtn message={message}/>
+      className='bg-gray-200/25 mt-5 rounded-sm drop-shadow-lg  drop-shadow-gray-200 cursor-pointer grid lg:grid-cols-2 md:grid-cols-2 justify-center items-center lg:gap-10 gap-2 lg:w-[90%] w-full mx-auto'>
+        <div className='h-full w-full'>
+          <img src={image} className='rounded h-full w-full '/>
+        </div>
+        
+        <div className='mb-4 lg:p-6 p-4'>
+          <h1 className='text-lightBrown font-medium text-xl lg:text-2xl leading-tight font-gothicExpanded'>{title}</h1>
+          <p className='text-gray-600 text-md font-normal lg:text-lg mt-1 mb-5 leading-6 tracking-tight '>{description}</p>
+          <WhatsAppBtn message={message}/>
+        </div>
+     
     </motion.div>
   )
 }

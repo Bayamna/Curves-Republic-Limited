@@ -16,7 +16,7 @@ const Footer = () => {
             <p className='mb-2 font-medium tracking-tight leading-tight'>Be the first to receive price, promos and new products updates.</p>
             <input type='text' id="newsLetter" placeholder='Enter Your Email' autoComplete='off'
             className='bg-lightGold p-3 w-full border-0 outline-0 mb-2 rounded-sm'/>
-            <button className='text-gold text-sm lg:text-lg bg-lightBrown w-[50%] py-2 rounded-sm cursor-pointer font-gothicExpanded tracking-wider'>Subscribe</button>
+            <button className='text-gold text-sm lg:text-lg bg-gradient-to-r from-brown to-lightBrown w-[50%] py-2 rounded-sm cursor-pointer font-gothicExpanded tracking-wider'>Subscribe</button>
           </form>
 
           <div className='flex justify-center items-center gap-1 mt-2 lg:mt-0 mb-1'>

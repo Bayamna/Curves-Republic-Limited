@@ -1,5 +1,5 @@
 import {motion} from "framer-motion";
-import HeroeImg from "../assets/heroeImageWhite.png";
+import HeroeImg from "../assets/heroe.png";
 import {Link} from "react-router-dom";
 import WhatWeDo from '../whatWeDo';
 import WhatWeDoCard from '../components/WhatWeDoCard';
@@ -12,15 +12,15 @@ const Home = () => {
       <div className='flex-grow'>
 
         {/* Heroe section */}
-        <section className='min-h-100% place-items-center min-w-100% bg-gradient-to-r from-lightGold to-gold grid lg:grid-cols-2 py-35 gap-12 lg:gap-0 px-5 lg:px-10 '>
+        <section className='min-h-100% place-items-center min-w-100% bg-gradient-to-r from-lightGold to-gold grid lg:grid-cols-2 md:grid-cols-2 lg:py-16 py-30 gap-12 lg:gap-0 px-5 lg:px-10 '>
 
           <motion.div
             initial={{opacity: 0, x: -30}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, ease: "easeOut"}}
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
           
-            className='text-center lg:text-left'>
+            className='text-center lg:text-left md:text-left'>
             <h1 className='text-brown font-medium text-4xl lg:text-5xl font-gothicExpanded'>Where Beauty Meets Confidence!</h1>
             <p className='text-brown text-xl lg:text-2xl mt-4 font-medium mb-8'>
               Strugling with stubborn Fat, Skin Stag, DPN's, Keloid, Dark Spots, Scars or Stretch Marks etc.?
@@ -28,7 +28,8 @@ const Home = () => {
 
 
             {/* Action button */}
-              <Link to="/booking" className='text-sm text-white bg-gradient-to-r from-brown  to-lightBrown border-3 border-lightBrown px-[20px] py-[8px] cursor-pointer rounded-lg font-gothicExpanded tracking-wider'>Let's Book You Today</Link>
+              <Link to="/booking" className='text-sm text-white bg-gradient-to-r from-brown  to-lightBrown px-4 py-2 cursor-pointer rounded-sm font-gothicExpanded tracking-widest'>
+              GET APPOINTMENT</Link>
           </motion.div>
 
 
@@ -37,25 +38,26 @@ const Home = () => {
             initial={{opacity: 0, x: 30}}
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, ease: "easeOut"}}
-            viewport={{ once: false, amount: 0.2 }}>
+            viewport={{ once: true, amount: 0.2 }}>
 
-            <img src={HeroeImg} className=' w-full h-[30rem] transform-none sm:text-center lg:text-center'/>
+            <img src={HeroeImg} className=' w-full h-full transform-none sm:text-center lg:text-center'/>
           </motion.div>
         </section>
 
 
         {/* Explore our services */}
-        <section className='min-w-100% p-6 lg:p-15'>
-          <h1 className=' text-2xl lg:text-4xl lg:mb-6 text-center text-lightBrown font-gothicExpanded tracking-wide'>
-            What Would You Like To Fix Today?
+        <section className='min-w-100% p-4 lg:p-10 mt-6'>
+          <h1 className=' text-2xl lg:text-3xl lg:mb-6 text-center text-lightBrown font-gothicExpanded tracking-wide'>
+            Aesthetics Treatments We Provide
           </h1>
 
-          <div className='mt-5 grid lg:grid-cols-2 gap-6'>
+          <div className='mt-5 gap-6 '>
             {WhatWeDo.map(item=>{
               return (
                 <WhatWeDoCard
                     key={item.id}
                     image={item.image}
+                    title={item.title}
                     description={item.description}
                     message={item.message}
                 />
@@ -63,7 +65,6 @@ const Home = () => {
             })}
           </div>
         </section>
-
         
         {/* Why curves republic ltd. */}
         <section className='mt-5 lg:mt-4 bg-gradient-to-r from-brown to-lightBrown p-6'>
