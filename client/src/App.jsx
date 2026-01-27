@@ -6,13 +6,28 @@ import Products from "./pages/Products";
 import About from "./pages/About";
 import Booking from "./pages/Booking";
 import Footer from "./components/Footer";
+import LearnMore from "./pages/LearnMore";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-function App() {
- 
+const App = ()=>{
+
+const ScrollToTop = ()=> {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+
+    window.scrollTo(0, 0);
+    
+  }, [pathname]);
+
+  return null; 
+}
 
   return (
     <>
     <Router>
+      <ScrollToTop/>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
@@ -20,6 +35,7 @@ function App() {
         <Route path="/services" element={<Services/>}/>
         <Route path="/products" element={<Products/>}/>
         <Route path="/booking" element={<Booking/>}/>
+        <Route path="/learnMore" element={<LearnMore/>}/>
       </Routes>
       <Footer/>
     </Router>

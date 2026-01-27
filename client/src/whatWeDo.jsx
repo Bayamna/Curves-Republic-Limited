@@ -13,15 +13,17 @@ const WhatWeDo = [
         title: "Skin Lesions Removal",
         description: "Smooth, flawless skin is possible. We expertly remove skin tags, moles, DPNs, warts, syringomas, and seborrheic keratoses using non-surgical, safe, and precise procedures that leave your skin even, refined, and beautiful. ",
         image: Lession,
-        message: "Hi, I want to book an assessment for skin lessions treatment."
+        message: "Hi, I want to book an assessment for skin lessions treatment.",
+        video: "Video to play."
     },
 
     {
         id: 2, 
-        title: "Fat lose Treatment",
+        title: "Fat Reduction and Weight Lose Treatment",
         description: "Shape your body. Renew your confidence. Our non-invasive body contouring technologies including Cryolipolysis, Cavitation, Radiofrequency, EMS, Lasser, Fat Dissolving Injections, and Tirzepatide Weight Loss protocols  help you burn fat, tighten skin, and sculpt your dream body naturally.",
         image: FatLoseImg,
-        message: "Hi, I want to book an assessment for fat reduction."
+        message: "Hi, I want to book an assessment for fat reduction.",
+        video: "Video to play.",
     },
 
     {
@@ -29,7 +31,8 @@ const WhatWeDo = [
         title: "Regenerative And Injectable Treatment",
         description: "Turn back time with modern aesthetics. From PRP therapy and skin boosters to dermal fillers, tear-trough correction, and HA butt/hip enhancement, our regenerative treatments restore youth, lift, and glow from within.",
         image: PRP,
-        message: "Hi, I want to book an assessment for PRP treatment."
+        message: "Hi, I want to book an assessment for PRP treatment.",
+        video: "Video to play."
     },
 
     {
@@ -37,7 +40,8 @@ const WhatWeDo = [
         title: "Advance Facials",
         description: "Glowing skin starts here. Experience professional facial treatments such as Hydrafacial, Acne Facial, Glow Facial, Microneedling, and Anti-Aging Facials each designed to rejuvenate, brighten, and refresh your skin for a radiant, youthful glow.",
         image: Facial,
-        message: "Hi, I want to book an assessment for facials."
+        message: "Hi, I want to book an assessment for facials.",
+        video: "Video to play."
     },
 
     {
@@ -45,7 +49,8 @@ const WhatWeDo = [
         title: "Dental Care",
         description: "Smile with confidence. Through our professional dental services teeth whitening, scaling, and oral aesthetics we help you achieve a healthy, bright smile that complements your overall beauty.",
         image: Dental,
-        message: "Hi, I want to book an assessment for teeth whitening."
+        message: "Hi, I want to book an assessment for teeth whitening.",
+        video: "Video to play."
     },
 
     {
@@ -53,7 +58,8 @@ const WhatWeDo = [
         title: "IV Therapies",
         description: "Replenish. Revive. Recharge. Our IV drips deliver skin-brightening, detox, weight-loss, immune boost, and hydration nutrients directly into your system for enhanced vitality, glow, and wellness  from the inside out.",
         image: IV,
-        message: "Hi, I want to book an assessment for IV treatment."
+        message: "Hi, I want to book an assessment for IV treatment.",
+        video: "Video to play."
     },
 
     {
@@ -61,7 +67,8 @@ const WhatWeDo = [
         title: "Skin Care Products",
         description: "Your skin deserves the best. Discover our exclusive range of Curves Republic skincare formulations, including brightening serums, acne solutions, sunscreens, and body lotions all scientifically crafted to protect, nourish, and perfect your skin every day.",
         image: Products,
-        message: "Hi, I want to buy some skin care products."
+        message: "Hi, I want to buy some skin care products.",
+        video: "Video to play."
     },
 
 ]

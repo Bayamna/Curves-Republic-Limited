@@ -7,9 +7,9 @@ const ValuesCard = ({icon, title, description}) => {
       initial={{opacity: 0, y: 30}}
       whileInView={{opacity: 1, y: 0}}
       transition={{duration: 1, ease: "easeOut"}}
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
     
-      className='flex gap-2 lg:gap-3 justify-start items-start p-5 lg:p-6 border border-lightBrown rounded-2xl'>
+      className='flex gap-2 lg:gap-3 justify-start items-start p-5 w-full lg:p-6 border border-lightBrown rounded-md'>
         <div className='text-gold text-4xl lg:text-5xl' >{icon}</div>
         <div>
             <h1 className='text-gold text-2xl lg:text-3xl font-gothicExpanded tracking-wide'>{title}</h1>

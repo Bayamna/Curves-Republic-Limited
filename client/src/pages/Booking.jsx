@@ -55,12 +55,12 @@ const Booking = () => {
     }
 
   return (
-    <div className='mt-[8rem] text-center w-[90%] lg:w-[70%] mx-auto flex flex-col min-h-screen '>
+    <div className='lg:mt-30 mt-25 text-center w-[90%] lg:w-[70%] mx-auto flex flex-col min-h-screen '>
     <div className='flex-grow'>
-        <h1 className='text-2xl lg:text-4xl text-lightBrown leading-tight font-gothicExpanded tracking-wide'>Let's Book You Today</h1>
+        <h1 className='text-3xl lg:text-5xl text-lightBrown leading-8 font-black font-gothicExpanded tracking-wide'>Let's Book You Today</h1>
         
-        <div className='lg:flex justify-between items-center gap-6 mt-6 mb-10  border-2 border-gray-400 rounded-xl bg- bg-gray-400/10'>
-            <div className='text-gray-600 p-6 lg:border border-gray-300 bg-gray-400/10 rounded-lg'>
+        <div className='lg:flex justify-between items-center gap-6 mt-4 lg:mt-7 mb-10 shadow-md rounded-xl bg- bg-gray-400/10'>
+            <section className='text-gray-600 p-6 lg:border border-gray-300 bg-gray-400/10 rounded-lg'>
 
                 <h2 className='text-[1.3rem] leading-6 pb-2 border-b border-gray-300 text-gray-600 font-gothicExpanded '>Contact Information</h2>
                 <div className='mt-4 border-b border-gray-300 pb-2 flex justify-center items-center gap-2'>
@@ -88,7 +88,7 @@ const Booking = () => {
                 </div>
                 
 
-            </div>
+            </section>
 
             <section 
                 className='mx-10 my-10'>
@@ -123,13 +123,13 @@ const Booking = () => {
                         <option value="Nose Enhancement">Nose Enhancement</option>
                         <option value="Hair Loss Treatment">Hair Loss Treatment</option>
                     </select>
-                    <button type='submit' className='bg-gradient-to-r from-brown to-lightBrown text-white px-8 py-2 cursor-pointer border-3 border-lightBrown rounded-lg mt-5 font-gothicExpanded tracking-wider'>Book Now</button>
+                    <button type='submit' className='bg-gradient-to-r from-brown to-lightBrown text-white px-8 py-2 cursor-pointer border border-lightBrown rounded-md mt-5 mb-8 font-gothicExpanded tracking-wider'>Submit</button>
                 </form>
             </section>
         </div>
 
         <section className='mb-20 mt-10 lg:mt-15'>
-            <h1 className='text-2xl lg:text-4xl text-lightBrown leading-7 lg:leading-10 mb-2 font-gothicExpanded tracking-wide'>Frequently Asked Questions (FAQ's)</h1>
+            <h1 className='text-3xl lg:text-5xl text-lightBrown font-black leading-8 lg:leading-13 mb-2 font-gothicExpanded tracking-wide'>Frequently Asked Questions (FAQ's)</h1>
             <p className='text-gray-600 text-sm lg:text-xl leading-tight font-gothicExpanded tracking-wide '>We know you have questions to ask, these are the answers </p>
 
             <div className='mt-6'>

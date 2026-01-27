@@ -12,7 +12,7 @@ const Home = () => {
       <div className='flex-grow'>
 
         {/* Heroe section */}
-        <section className='min-h-100% place-items-center min-w-100% bg-gradient-to-r from-lightGold to-gold grid lg:grid-cols-2 md:grid-cols-2 lg:py-16 py-30 gap-12 lg:gap-0 px-5 lg:px-10 '>
+        <section className='min-h-screen place-items-center min-w-100% bg-gradient-to-r from-lightGold to-gold grid lg:grid-cols-2 md:grid-cols-2 lg:py-16 py-30 gap-4 lg:gap-0 px-5 lg:px-10 '>
 
           <motion.div
             initial={{opacity: 0, x: -30}}
@@ -29,7 +29,7 @@ const Home = () => {
 
             {/* Action button */}
               <Link to="/booking" className='text-sm text-white bg-gradient-to-r from-brown  to-lightBrown px-4 py-2 cursor-pointer rounded-sm font-gothicExpanded tracking-widest'>
-              GET APPOINTMENT</Link>
+              Get Appointment</Link>
           </motion.div>
 
 
@@ -39,15 +39,14 @@ const Home = () => {
             whileInView={{opacity: 1, x: 0}}
             transition={{duration: 1, ease: "easeOut"}}
             viewport={{ once: true, amount: 0.2 }}>
-
-            <img src={HeroeImg} className=' w-full h-full transform-none sm:text-center lg:text-center'/>
+            <img src={HeroeImg} className=' w-full h-full transform-none sm:text-center lg:text-center object-cover'/>
           </motion.div>
         </section>
 
 
         {/* Explore our services */}
-        <section className='min-w-100% p-4 lg:p-10 mt-6'>
-          <h1 className=' text-2xl lg:text-3xl lg:mb-6 text-center text-lightBrown font-gothicExpanded tracking-wide'>
+        <section className='min-w-100% p-4 mt-6'>
+          <h1 className=' text-2xl lg:text-4xl lg:mb-6 text-center text-lightBrown font-bold font-gothicExpanded tracking-wide'>
             Aesthetics Treatments We Provide
           </h1>
 
@@ -60,6 +59,9 @@ const Home = () => {
                     title={item.title}
                     description={item.description}
                     message={item.message}
+                    id={item.id}
+                    videoTitle={item.title}
+                    video={item.video}
                 />
               )
             })}
@@ -67,9 +69,9 @@ const Home = () => {
         </section>
         
         {/* Why curves republic ltd. */}
-        <section className='mt-5 lg:mt-4 bg-gradient-to-r from-brown to-lightBrown p-6'>
+        <section className='mt-5 lg:mt-4 bg-gradient-to-r from-brown to-lightBrown p-4'>
             <h1 className=' text-2xl lg:text-4xl lg:mb-6 text-center mt-5 lg:mt-6 text-white font-gothicExpanded tracking-wide'>Why Curves Republic Ltd.</h1>
-            <div className='grid gap-4 lg:gap-6 lg:grid-cols-2 mb-10 mt-8 lg:mt-12'>
+            <div className='grid gap-4 lg:gap-6 lg:grid-cols-2 md:grid-cols-2 mb-10 mt-8 lg:mt-12'>
               {valuesData.map(data=>{
                 return (
                   <ValuesCard
